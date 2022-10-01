@@ -31,4 +31,3 @@ toc: true
 - Run post-install scripts that may do something nasty to your machine.
 
 Check the **Quick Start →** section to learn more.
-

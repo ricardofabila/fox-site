@@ -78,7 +78,7 @@ And that's it! Now you can run:
 fox install tool
 ```
 
-##### Can I test how my package will be installed before adding it to the file?
+#### Can I test how my package will be installed before adding it to the file?
 
 Of course, you can! In your `~/.fox/repositories.yaml` file, there is a section called `packages`. That section is a list
 of packages. It follows the exact format described above.
@@ -104,4 +104,3 @@ And now you can run the following to make sure you did every thing right:
 ``` bash
 fox install my-thing
 ```
-

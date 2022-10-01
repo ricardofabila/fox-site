@@ -38,7 +38,7 @@ when using them anonymously to avoid abuse, by using the `gh` CLI we can avoid a
 
 Getting started is as easy as 1, 2, 3.
 
-1. Just run:
+1.) Just run:
 
 ```bash
 sudo curl -fsSL "install.getfox.sh" | bash
@@ -46,11 +46,11 @@ sudo curl -fsSL "install.getfox.sh" | bash
 
 Follow the on-screen instructions to add `fox` to your _$PATH_.
 
-2. Install the official [GitHub CLI](https://cli.github.com/), if you don't already have it. Relax, you can run `fox gh`
+2.) Install the official [GitHub CLI](https://cli.github.com/), if you don't already have it. Relax, you can run `fox gh`
    to install it 😉. Then run `gh auth`. To setup authentication. I recommend using _ssh keys_, so you never have to
    use a password.
 
-3. That's it! That wasn't so bad, was it?
+3.) That's it! That wasn't so bad, was it?
 
 If you did everything correctly you can try running the following command:
 

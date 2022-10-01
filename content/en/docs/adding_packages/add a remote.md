@@ -26,7 +26,7 @@ gladly check it out.
 To install a package, first `fox` needs to know where to find it. To achieve this, you need to add a `remote` to your
 repositories file, which is located at `~/.fox/repositories.yaml`.
 
-The _**remotes**_ section of this YAMl file consists of a list of items with the following format:
+The __remotes__ section of this YAMl file consists of a list of items with the following format:
 
 ``` yaml
 remotes:
@@ -34,8 +34,8 @@ remotes:
   type: "github" # string - either 'open' or 'github'
 ```
 
-The value for `url` is a *string* that fox will use to look for a YAMl file with your packages. The value for `type` is
-a *string* that can be either *github* or *open*. Use _open_ if the url is public (eg. on your own server, an S3 bucket,
+The value for `url` is a _string_ that fox will use to look for a YAMl file with your packages. The value for `type` is
+a _string_ that can be either _github_ or _open_. Use _open_ if the url is public (eg. on your own server, an S3 bucket,
 etc), or use _github_ if the file is hosted on a private/public GitHub repo.
 
 Example `~/.fox/repositories.yaml`:
@@ -48,7 +48,7 @@ remotes:
   type: "open"
 ```
 
-**Note**: notice how the the url for the _github_ type is not a full url, but a GitHub path.
+__Note__: notice how the the url for the _github_ type is not a full url, but a GitHub path.
 
 You can edit the file directly using your preferred editor to add remotes, but you can also use the following command:
 
@@ -58,4 +58,4 @@ You can edit the file directly using your preferred editor to add remotes, but y
 
 Use `fox add remote -h` for help.
 
-Continue to know what this *remote* file consists of.
+Continue to know what this _remote_ file consists of.
