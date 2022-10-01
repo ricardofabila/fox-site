@@ -1,4 +1,4 @@
-baseurl = "http://getfox.sh/"
+baseurl = "https://www.getfox.sh/"
 canonifyURLs = true
 disableAliases = true
 disableHugoGeneratorInject = true
