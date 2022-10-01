@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://getfox.sh/sitemap.xml
+Sitemap: https://www.getfox.sh/sitemap.xml
