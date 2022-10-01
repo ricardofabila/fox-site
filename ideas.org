@@ -1,0 +1,55 @@
+#+title: Ideas
+
+* Pages
+
+** Home page
+Display the fox gif
+Github button
+install snippet
+add tip button
+
+** Why another package manager
+Because it was easier for me to create a new package manager from scratch than to add a private repo to homebrew. Also, fox works on linux, while I have never seen anyone succesfully installing homebrew on a linux system and actually use it. Trust me, I tried.
+
+** Installation instructions
+easy peasy
+
+** How to make my package installable with fox
+
+Fox packages are just regular github releases.
+
+*** If your package is a script (eg. a bash or  nodejs script)
+
+make sure you have the script as an asset in your release with the name that you chose as your ExecutableName in the package YAML entry
+
+*** if your package is an executable binary
+
+make sure you have the binaries with an appropriate for each OS and hardware architecture name in your assets for your release. Examples:
+
+Fox will try to fuzzy search the users OS and ARCHITECTURE to find the best match from your asset files.
+
+** Do I need to have a YAML repositories file if I have repos on my own that I want to install via fox
+No. In your =~/.fox/repositories.yaml= file there is a entry called =packages= which you can use to add a package that you want to be able to install via fox. It can even be a github repo that doesn't even know that fox exists! As long as it has releases that comply with what fox expects (which is what most package managers expect), you can install it via fox 😜.
+
+This is useful too if you have a private repo of your own and you want to make it easy to install on different systems.
+
+** I have a public package that I want to make installable via fox for everyone
+
+Fox has an official repositories list that fox knows to looks for by default. If you have a public package that you want to add it to the list, feel free to open a PR on this repo with your entry to the YAML file. Attach links to the github repo, and a short description of what your package does and we'll add it to the list.
+
+** Why not windows support?
+Because I have not used a windows machine in many years. While windows does a few things better than unix systems, the way it handles its PATH is not one of them. Having it being a GUI thingy is too cumbersome. I am not saying that a colon-separated ENV string is a good alternative. It is not! But at least it is easier to manage.
+
+I know there is a way to do it programatically, but since I have no easy access to a windows machine at the moment, I just can't do it right now. Feel free to use the tip button, so I can get one sooner 😜.
+
+** FAQ
+*** Are private repos only supported?
+No. You can add public repos just the same way as a private repo. fox uses the official gh CLI, so as long as you can see the repo you want to install from. You are good to go.
+*** Why no post-install script support?
+While most packages use post-install scripts for normal things like updating man pages, and such. Arbitrary code execution without the user's explicit approval is something I am quite firmly against. This is one of the reasons I don't like NPM. While is offers a flag to turn that off, if you do most packages stop working. This is also teh reason why if you run =brew install= with =sudo= it yells at you.
+
+I am not allowing =fox= to allow someone to add a post install script that has =rm -rf /= in it. Even by accident.
+
+Perhaps in the future I can add support for post-install scripts, but since fox was concived specifically for private repos, it is not a priority. you can let your team know if they need to do something post installation.
+
+The worst thing that could happen is that =fox= gets wide adoption with a fundamental flaw just because I didn't put enough though about the implications. This is how we got stuck with things that are massively used but are simple wrong and shouldn't exist they way they do. Things like: NPM, Java, JavaScript, [[[[https://www.youtube.com/watch?v=L9v4Mg8wi4U]]][unix]], AngularJS, Object Oriented Programming, PHP, Putin, and many more. I am sure that the creators of these things didn't intent these things to have the wide adoption that they do while never being able to fix the fundamental flaws they missed on the early stages.

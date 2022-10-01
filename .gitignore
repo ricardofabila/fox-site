@@ -1,0 +1,16 @@
+node_modules
+public
+resources
+.netlify
+.hugo_build.lock
+
+# IntelliJ
+.idea/
+
+## mac OS finder garbage
+.DS_Store
+**/*.DS_Store
+
+# VSCode stuff
+.vscode/
+
