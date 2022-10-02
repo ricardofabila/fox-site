@@ -10,7 +10,7 @@ description = "A (simple!) package manager to install your tools with ease. Thin
 # docsVersion = "0.3"
 
 ## Open Graph
-images = ["doks.png"]
+images = ["fox.png"]
 ogLocale = "en_US"
 domainTLD = "getfox.sh"
 titleHome = "fox"

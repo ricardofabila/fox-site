@@ -1,6 +1,6 @@
 {
-  "name": "@hyas/doks",
-  "description": "Doks theme",
+  "name": "@ricardofabila/fox",
+  "description": "fox site",
   "version": "0.5.0",
   "engines": {
     "node": ">=16.16.0"
@@ -8,7 +8,7 @@
   "browserslist": [
     "defaults"
   ],
-  "repository": "https://github.com/h-enk/doks",
+  "repository": "https://github.com/ricardofabila/fox-site",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
